@@ -4,6 +4,28 @@ Base project template for writing a novel or book with Bradbit. It keeps
 the story bible, structure, manuscript, research, revision notes and
 pitch documents in one workspace.
 
+## When to use it
+Use this kit for a novel, a novella or a long-form book where the
+deliverable is a manuscript and the work is organized around a story
+bible, structure, chapters and revision.
+
+## Workflow
+1. `/idea` — premise, genre, audience and target length.
+2. `/character` — character sheets and voices.
+3. `/structure` — choose a novel structure method.
+4. `/outline` — chapter-by-chapter outline.
+5. `/chapter` — chapter drafts in `manuscript/`.
+6. `/continuity` — check timeline, names and facts.
+7. `/review` and `/style` — revision and voice.
+8. `/synopsis` — synopsis and query letter.
+
+## Creating a project
+From the app: **New project** → **Novel (libro-kit)**.
+From the CLI:
+```bash
+bradbit init my-novel --kit libro-kit
+```
+
 ## Quick start
 
 1. Copy this folder as the repository for your book:
@@ -73,6 +95,14 @@ blank lines between paragraphs, and `* * *` for a scene break. Keep the
 title page metadata in `bible/premise.md` or a dedicated
 `manuscript/title-page.md` if needed. The editor previews Markdown and
 can print/export a PDF; there is no DOCX export yet.
+
+## Language and aliases
+
+Kit instructions are English; the agent replies and writes the manuscript
+in the language configured in Bradbit. Canonical command ids are English,
+with Spanish aliases when the app runs in Spanish (`/personaje`,
+`/estructura`, `/capitulo`, ...). The editor sends the canonical id to the
+runtime.
 
 ## Versioning
 
